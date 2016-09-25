@@ -5,10 +5,9 @@ drop table if exists decision;
 CREATE TABLE decision (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 name VARCHAR(30) NOT NULL,
-description VARCHAR(200) NOT NULL,
+description VARCHAR(200),
 status VARCHAR(30),
-creation_date TIMESTAMP,
-last_update_date TIMESTAMP
+creation_dt TIMESTAMP
 );
 
 CREATE TABLE choice (
@@ -17,8 +16,7 @@ decision_id INT(6),
 name VARCHAR(30) NOT NULL,
 description VARCHAR(200) NOT NULL,
 status VARCHAR(30),
-creation_date TIMESTAMP,
-last_update_date TIMESTAMP
+creation_dt TIMESTAMP
 );
 
 CREATE TABLE criteria (
@@ -27,6 +25,5 @@ decision_id INT(6),
 name VARCHAR(30) NOT NULL,
 description VARCHAR(200) NOT NULL,
 status VARCHAR(30),
-creation_date TIMESTAMP,
-last_update_date TIMESTAMP
+creation_dt TIMESTAMP
 );
