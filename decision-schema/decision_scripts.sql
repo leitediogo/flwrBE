@@ -23,3 +23,24 @@ INSERT INTO `flwr`.`criteria` (`decision_id`,`name`,`description`,`status`) VALU
 INSERT INTO `flwr`.`criteria` (`decision_id`,`name`,`description`,`status`) VALUES (1, 'criteria Three', 'criteria Three description', 'criteriaStat');
 --Insert comments decision
 INSERT INTO `flwr`.`comment`(`author_id`,`description`,`decision_id`,`type`) VALUES (1, 'comment on decision', 1, 'type of comment');
+INSERT INTO `flwr`.`comment`(`author_id`,`description`,`decision_id`,`type`) VALUES (2, 'comment on decision 2', 1, 'type of comment');
+INSERT INTO `flwr`.`comment`(`author_id`,`description`,`decision_id`,`type`) VALUES (3, 'comment on decision 3', 1, 'type of comment');
+--Insert comments criteria
+INSERT INTO `flwr`.`comment`(`author_id`,`description`,`criteria_id`,`type`) VALUES (1, 'comment on criteria', 1, 'type of comment');
+INSERT INTO `flwr`.`comment`(`author_id`,`description`,`criteria_id`,`type`) VALUES (2, 'comment on criteria 2', 1, 'type of comment');
+INSERT INTO `flwr`.`comment`(`author_id`,`description`,`criteria_id`,`type`) VALUES (3, 'comment on criteria 3', 1, 'type of comment');
+INSERT INTO `flwr`.`comment`(`author_id`,`description`,`criteria_id`,`type`) VALUES (1, 'comment on criteria', 2, 'type of comment');
+INSERT INTO `flwr`.`comment`(`author_id`,`description`,`criteria_id`,`type`) VALUES (2, 'comment on criteria 2', 2, 'type of comment');
+INSERT INTO `flwr`.`comment`(`author_id`,`description`,`criteria_id`,`type`) VALUES (3, 'comment on criteria 3', 2, 'type of comment');
+INSERT INTO `flwr`.`comment`(`author_id`,`description`,`criteria_id`,`type`) VALUES (1, 'comment on criteria', 3, 'type of comment');
+INSERT INTO `flwr`.`comment`(`author_id`,`description`,`criteria_id`,`type`) VALUES (2, 'comment on criteria 2', 3, 'type of comment');
+INSERT INTO `flwr`.`comment`(`author_id`,`description`,`criteria_id`,`type`) VALUES (3, 'comment on criteria 3', 3, 'type of comment');
+--Insert comments on choiceINSERT INTO `flwr`.`comment`(`author_id`,`description`,`choice_id`,`type`) VALUES (1, 'comment on choice', 1, 'type of comment');
+INSERT INTO `flwr`.`comment`(`author_id`,`description`,`choice_id`,`type`) VALUES (2, 'comment on choice 2', 1, 'type of comment');
+INSERT INTO `flwr`.`comment`(`author_id`,`description`,`choice_id`,`type`) VALUES (3, 'comment on choice 3', 1, 'type of comment');
+INSERT INTO `flwr`.`comment`(`author_id`,`description`,`choice_id`,`type`) VALUES (1, 'comment on choice', 2, 'type of comment');
+INSERT INTO `flwr`.`comment`(`author_id`,`description`,`choice_id`,`type`) VALUES (2, 'comment on choice 2', 2, 'type of comment');
+INSERT INTO `flwr`.`comment`(`author_id`,`description`,`choice_id`,`type`) VALUES (3, 'comment on choice 3', 2, 'type of comment');
+INSERT INTO `flwr`.`comment`(`author_id`,`description`,`choice_id`,`type`) VALUES (1, 'comment on choice', 3, 'type of comment');
+INSERT INTO `flwr`.`comment`(`author_id`,`description`,`choice_id`,`type`) VALUES (2, 'comment on choice 2', 3, 'type of comment');
+INSERT INTO `flwr`.`comment`(`author_id`,`description`,`choice_id`,`type`) VALUES (3, 'comment on choice 3', 3, 'type of comment');

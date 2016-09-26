@@ -30,13 +30,13 @@
     "name": {
       "type": "String",
       "required": true,
-      "length": 30,
+      "length": 50,
       "precision": null,
       "scale": null,
       "mysql": {
         "columnName": "name",
         "dataType": "varchar",
-        "dataLength": 30,
+        "dataLength": 50,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "N"
@@ -45,44 +45,92 @@
     },
     "description": {
       "type": "String",
-      "required": true,
-      "length": 30,
+      "required": false,
+      "length": 200,
       "precision": null,
       "scale": null,
       "mysql": {
         "columnName": "description",
         "dataType": "varchar",
-        "dataLength": 30,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "N"
-      },
-      "_selectable": false
-    },
-    "status": {
-      "type": "String",
-      "required": false,
-      "length": 50,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "status",
-        "dataType": "varchar",
-        "dataLength": 50,
+        "dataLength": 200,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "Y"
       },
       "_selectable": true
     },
-    "creationDate": {
+    "status": {
+      "type": "String",
+      "required": false,
+      "length": 30,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "status",
+        "dataType": "varchar",
+        "dataLength": 30,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "createdById": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "created_by_id",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "ownerId": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "owner_id",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "categoryId": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "category_id",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "dueDt": {
       "type": "Date",
       "required": true,
       "length": null,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "creation_date",
+        "columnName": "due_dt",
         "dataType": "timestamp",
         "dataLength": null,
         "dataPrecision": null,
@@ -91,14 +139,30 @@
       },
       "_selectable": false
     },
-    "lastUpdateDate": {
+    "creationDt": {
       "type": "Date",
       "required": true,
       "length": null,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "last_update_date",
+        "columnName": "creation_dt",
+        "dataType": "timestamp",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "lastUpdateDt": {
+      "type": "Date",
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "last_update_dt",
         "dataType": "timestamp",
         "dataLength": null,
         "dataPrecision": null,

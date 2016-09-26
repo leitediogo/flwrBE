@@ -34,17 +34,29 @@
   },
   "Choice": {
     "dataSource": "mysqlDS",
-    "public": true,
-    "$promise": {},
-    "$resolved": true
+    "public": true
   },
   "Decision": {
     "dataSource": "mysqlDS",
-    "public": true,
-    "$promise": {},
-    "$resolved": true
+    "public": true
+  },
+  "Comment": {
+    "dataSource": "mysqlDS",
+    "public": true
   },
   "Criteria": {
+    "dataSource": "mysqlDS",
+    "public": true
+  },
+  "Category": {
+    "dataSource": "mysqlDS",
+    "public": true
+  },
+  "DecisionParticipant": {
+    "dataSource": "mysqlDS",
+    "public": true
+  },
+  "Participant": {
     "dataSource": "mysqlDS",
     "public": true
   }

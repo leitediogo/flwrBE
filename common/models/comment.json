@@ -1,5 +1,5 @@
 {
-  "name": "Criteria",
+  "name": "Comment",
   "base": "PersistedModel",
   "idInjection": false,
   "options": {
@@ -7,7 +7,7 @@
   },
   "mysql": {
     "schema": "flwr",
-    "table": "criteria"
+    "table": "comment"
   },
   "properties": {
     "id": {
@@ -27,34 +27,18 @@
       },
       "_selectable": false
     },
-    "decisionId": {
+    "authorId": {
       "type": "Number",
       "required": true,
       "length": null,
       "precision": 10,
       "scale": 0,
       "mysql": {
-        "columnName": "decision_id",
+        "columnName": "author_id",
         "dataType": "int",
         "dataLength": null,
         "dataPrecision": 10,
         "dataScale": 0,
-        "nullable": "N"
-      },
-      "_selectable": false
-    },
-    "name": {
-      "type": "String",
-      "required": true,
-      "length": 50,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "name",
-        "dataType": "varchar",
-        "dataLength": 50,
-        "dataPrecision": null,
-        "dataScale": null,
         "nullable": "N"
       },
       "_selectable": false
@@ -75,14 +59,62 @@
       },
       "_selectable": true
     },
-    "status": {
+    "decisionId": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "decision_id",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "criteriaId": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "criteria_id",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "choiceId": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "choice_id",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "type": {
       "type": "String",
       "required": false,
       "length": 30,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "status",
+        "columnName": "type",
         "dataType": "varchar",
         "dataLength": 30,
         "dataPrecision": null,

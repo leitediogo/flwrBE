@@ -1,5 +1,5 @@
 {
-  "name": "Criteria",
+  "name": "DecisionParticipant",
   "base": "PersistedModel",
   "idInjection": false,
   "options": {
@@ -7,7 +7,7 @@
   },
   "mysql": {
     "schema": "flwr",
-    "table": "criteria"
+    "table": "decision_participant"
   },
   "properties": {
     "id": {
@@ -43,50 +43,18 @@
       },
       "_selectable": false
     },
-    "name": {
-      "type": "String",
-      "required": true,
-      "length": 50,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "name",
-        "dataType": "varchar",
-        "dataLength": 50,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "N"
-      },
-      "_selectable": false
-    },
-    "description": {
-      "type": "String",
+    "participantId": {
+      "type": "Number",
       "required": false,
-      "length": 200,
-      "precision": null,
-      "scale": null,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
       "mysql": {
-        "columnName": "description",
-        "dataType": "varchar",
-        "dataLength": 200,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
-    "status": {
-      "type": "String",
-      "required": false,
-      "length": 30,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "status",
-        "dataType": "varchar",
-        "dataLength": 30,
-        "dataPrecision": null,
-        "dataScale": null,
+        "columnName": "participant_id",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
         "nullable": "Y"
       },
       "_selectable": true
