@@ -6,9 +6,11 @@ INSERT INTO `flwr`.`participant` (`name`, `full_name`) VALUES ('dleite', 'Diogo 
 INSERT INTO `flwr`.`participant` (`name`,`full_name`) VALUES ('rmateus','Ricardo Mateus');
 INSERT INTO `flwr`.`participant`(`name`,`full_name`) VALUES ('fantonio','Florival Antonio');
 INSERT INTO `flwr`.`participant`(`name`,`full_name`) VALUES ('ldaniel','Luis Daniel');
---Insert decision
+--Insert decisions
 INSERT INTO `flwr`.`decision`(`name`,`description`,`status`,`created_by_id`,`owner_id`,`category_id`,`due_dt`) VALUES 
 	('decision One','decision One description','Initiated',1,1,1,current_date());
+INSERT INTO `flwr`.`decision`(`name`,`description`,`status`,`created_by_id`,`owner_id`,`category_id`,`due_dt`) VALUES 
+	('decision Two','decision Two description','Initiated',1,1,1,current_date());
 --Insert decision participants	
 INSERT INTO `flwr`.`decision_participant` (`decision_id`,`participant_id`) VALUES (1, 1);
 INSERT INTO `flwr`.`decision_participant` (`decision_id`,`participant_id`) VALUES (1, 2);
